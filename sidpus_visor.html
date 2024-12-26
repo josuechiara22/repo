@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDPUS - Sistema de Información</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Texto blanco */
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px; /* Ajusta el tamaño del logo */
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        main {
+            height: calc(100vh - 60px); /* Resta la altura del encabezado */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Iframe para el mapa */
+        iframe {
+            flex: 1; /* Ocupa todo el espacio disponible */
+            border: none; /* Sin bordes */
+            width: 100%; /* Ocupa el ancho completo */
+        }
+
+        /* Pie de página (opcional) */
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Botón de regreso */
+        #backButton {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #backButton:hover {
+            background-color: #0056b3; /* Cambio de color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="https://via.placeholder.com/150x50" alt="Logo del MVCS">
+        <h1>Sistema de Información de Drenaje Pluvial Urbano Sostenible (SIDPUS)</h1>
+        <button id="backButton" onclick="window.location.href='https://nippondpu.es/sidpusogei2/';">Volver al Inicio</button>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+        <!-- Contenido adicional (agregado) -->
+        <div class="layout-animation app-root-emotion-cache-ltr-8pmwb7" data-layoutid="layout_1001">
+            <div class="d-flex layout-item is-widget app-root-emotion-cache-ltr-15qwdm9" data-layoutitemid="7" data-layoutid="layout_1001">
+                <div class="widget-renderer layout-item-content w-100  app-root-emotion-cache-ltr-178fa0a" data-widgetid="widget_1200">
+                    <div class="widget-content">
+                        <div class="jimu-widget widget-button w-100 h-100 app-root-emotion-cache-ltr-1iz80ax">
+                            <a id="jimu-link-app-0" target="_self" role="link" href="/sidpusogei/./?page=Página" tabindex="0" class="jimu-btn jimu-link widget-button-link text-truncate w-100 h-100 p-0 d-flex align-items-center justify-content-center app-root-emotion-cache-ltr-12q9448 btn btn-default" aria-label="Domicilio">
+                                <style>
+                                    #jimu-link-app-0 {
+                                        background-color: var(--danger-500);
+                                        border: 1px solid #484848;
+                                        border-radius: 0px;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        color: #fff;
+                                    }
+                                    #jimu-link-app-0:hover {
+                                        background-color: var(--dark-600);
+                                        color: #fff;
+                                    }
+                                </style>
+                                <span class="text-truncate widget-button-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M15.29 6.208 8 1 .71 6.208a.5.5 0 1 0 .58.813L2 6.515V15h12V6.514l.71.507a.5.5 0 0 0 .58-.813M13 5.8 8 2.229 3 5.8V14h3v-4h4v4h3zM9 14H7v-3h2z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- iFrame con la URL del Web AppBuilder -->
+        <iframe src="https://nippondpu.es/sidpus_visor/"></iframe>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2024 Ministerio de Vivienda, Construcción y Saneamiento - Todos los derechos reservados
+    </footer>
+</body>
+</html>
